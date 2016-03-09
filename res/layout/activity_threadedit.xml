@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:id="@+id/editor_base_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+    <!-- 标题输入框 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/title_white"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+
+        <EditText
+            android:id="@+id/et_title_post"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:ems="10"
+            android:textColorHint="@color/font_gray"
+            android:hint="标题(25字以内)"
+            android:lineSpacingExtra="4.6dp"
+            android:maxLength="25"
+            android:singleLine="true"
+            android:textColor="@color/font_gray"
+            android:textSize="16sp" >
+        </EditText>
+    </LinearLayout>
+	<!--内容输入框 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="7dp" >
+        <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="fill_parent"
+         android:id="@+id/post_scrollview"
+         android:background="#ffffff" >
+            <LinearLayout
+                android:id="@+id/ll_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <EditText
+                    android:id="@+id/editContent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textColorHint="@color/font_gray"
+                    android:background="#00000000"
+                    android:ems="12"
+                    android:gravity="top"
+                    android:textSize="16sp"
+                    android:hint="请输入内容"
+                    android:lineSpacingExtra="4.6dp"
+                    android:singleLine="false" >
+                </EditText>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- 底层标题栏和选择栏 -->
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/font_gray" />
+
+        <ImageView
+            android:id="@+id/pic_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/pic_selector" />
+
+        <ImageView
+            android:id="@+id/keyboard_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:src="@drawable/keyboard_selector" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/font_gray" />
+    </RelativeLayout>
+</LinearLayout>
+  <View
+        android:id="@+id/viewMask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:visibility="gone" >
+    </View>
+    </RelativeLayout>
+

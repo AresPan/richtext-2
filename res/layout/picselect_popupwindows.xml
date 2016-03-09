@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/upload_pic_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+     >  
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray" />
+            <Button
+                android:id="@+id/btn_upload_pic_popupwindows_camera"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bt_nobgd"
+                android:textColor="#585858"
+                android:textSize="18sp"
+                android:text="拍照" />
+  
+        <TextView        
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray" />
+
+            <Button
+                android:id="@+id/btn_upload_pic_popupwindows_photo"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bt_nobgd"
+                android:textColor="#585858"
+                android:textSize="18sp"
+                android:text="从相册中选取" />  
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray" />
+
+        <Button
+            android:id="@+id/btn_upload_pic_popupwindows_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bt_nobgd"
+            android:textColor="#585858"
+            android:textSize="18sp"
+            android:text="取消" /> 
+
+</LinearLayout>

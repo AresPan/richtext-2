@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!--背景灰-->
+    <color  name="background_gray">#eceef1</color>
+     <!--头标题白色颜色-->
+    <color  name="title_white">#ffffff</color>
+     <!--灰色字体-->
+    <color  name="font_gray">#abb0bc</color>
+     <!--超浅灰                   nav、tab的背景（nav毛玻璃）-->
+    <color  name="light_gray">#f7f7f7</color>
+    <color  name="pitch_black">#31343b</color>
+    <color  name="center_black">#575d6a</color>
+    <color  name="accent_blue">#1a99eb</color>
+    <color  name="point_red">#ed1c24</color>
+</resources>
